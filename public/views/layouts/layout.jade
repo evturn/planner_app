@@ -1,10 +1,13 @@
-doctype html5
-head
-  title Planner App
-  include dependencies/head
-body
-  block sidebar-left
-  block content
-  block sidebar-right
+doctype html
+html
+  head
+        include ../dependencies/head.html
+  body
+    include ../partials/header.html
+    include ../partials/nav.html
+.container
+  .row
+  .col-md-12
+        block content
     footer
-    include dependencies/libs
+       include ../dependencies/libs.html
