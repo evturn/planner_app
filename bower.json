@@ -1,0 +1,26 @@
+{
+  "name": "planner_app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jdoubleua/planner_app",
+  "authors": [
+    "Jeremy Alexander <jdoubleua@gmail.com>"
+  ],
+  "description": "track yo self",
+  "main": "app.js",
+  "keywords": [
+    "planner"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.2.6",
+    "backbone": "~1.1.2",
+    "bootstrap": "~3.3.4"
+  }
+}
