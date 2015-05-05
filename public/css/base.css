@@ -2,3 +2,9 @@
 Base Style for Pages
 **/
 
+header{
+
+    background: #00b3ee;
+    color: #fff;
+    min-height: 75px;
+}
