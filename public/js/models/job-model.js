@@ -1,4 +1,4 @@
 var app = app || {};
 
 
-app.jobModel = Backbone.Model.extend({});
+app.JobModel = Backbone.Model.extend({});
