@@ -1,6 +1,6 @@
 var app = app || {};
 
-var jobview = new app.JobView();
+var sidebar = new app.SidebarRight();
 
 $(document).ready(function () {
 

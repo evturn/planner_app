@@ -1,6 +1,6 @@
 var app = app || {};
 
-app.JobView = Backbone.View.extend({
+app.SidebarRight = Backbone.View.extend({
     el: "#app-right-panel",
     billablesTemplate: _.template($('#billables-template').html()),
     historyTemplate: _.template($('#history-template').html()),
