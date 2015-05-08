@@ -1,43 +1,18 @@
 var app = app || {};
 
 app.JobView = Backbone.View.extend({
-
-
-    initialize: function () {
-
-        this.render();
-        console.log("New JobView Instance created!");
-
-
-    },
-
+    el: "#app-right-panel",
+    billablesTemplate: _.template($('#billables-template').html()),
     events: {
-        'click #billables': "OnBillablesClicked"
+        'click #billables': "render"
     },
-
+    initialize: function() {
+        console.log('i\'ve been inited');
+    },
     render: function(){
-
-
-        this.$el.html(this.model.get("title") + "<button id= 'billables'>Bill</button>");
-
+        console.log("New JobView Instance created!");
+        var model = new app.JobModel({title: 'modelskies'});
+        $('.main-container').html(this.billablesTemplate(model.toJSON()));
         return this;
-    },
-
-
-
-    OnBillablesClicked: function(){
-        console.log("Billables clicked");
     }
-
 });
-
-var jobmodel = new app.JobModel({
-    title: "Job Modelskies"
-});
-
-var jobview = new app.JobView ({
-    el: ".main-container",
-    model: jobmodel
-});
-
-jobview.render();

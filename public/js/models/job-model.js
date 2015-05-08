@@ -16,8 +16,3 @@ app.JobModel = Backbone.Model.extend({
 
 });
 
-
-
-
-
-
