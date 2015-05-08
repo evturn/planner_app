@@ -37,3 +37,7 @@ header{
 #billables{
     cursor: pointer;
 }
+
+.sidebar-item:hover {
+    cursor: pointer;
+}
