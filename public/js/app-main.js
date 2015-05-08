@@ -1,8 +1,6 @@
 var app = app || {};
 
-
 var jobview = new app.JobView();
-
 
 $(document).ready(function () {
 
