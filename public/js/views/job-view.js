@@ -2,6 +2,7 @@ var app = app || {};
 
 app.JobView = Backbone.View.extend({
 
+
     initialize: function () {
 
         this.render();
@@ -16,8 +17,10 @@ app.JobView = Backbone.View.extend({
 
     render: function(){
 
-        console.log("JobView Render function created!");
 
+        this.$el.html(this.model.get("title") + "<button id= 'billables'>Bill</button>");
+
+        return this;
     },
 
 
@@ -28,5 +31,13 @@ app.JobView = Backbone.View.extend({
 
 });
 
-var jobview = new app.JobView();
+var jobmodel = new app.JobModel({
+    title: "Job Modelskies"
+});
+
+var jobview = new app.JobView ({
+    el: ".main-container",
+    model: jobmodel
+});
+
 jobview.render();

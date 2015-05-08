@@ -5,4 +5,7 @@ $(document).ready(function () {
             var d = new Date();
             this.innerHTML = d.toDateString();
         });
+
+
+
 });
