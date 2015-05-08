@@ -34,3 +34,6 @@ header{
     margin-top: 25px;
 }
 
+#billables{
+    cursor: pointer;
+}
